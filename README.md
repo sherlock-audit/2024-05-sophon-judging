@@ -205,6 +205,10 @@ Escalations have been resolved successfully!
 Escalation status:
 - [imp0wd3r](https://github.com/sherlock-audit/2024-05-sophon-judging/issues/4/#issuecomment-2143203258): accepted
 
+**sherlock-admin2**
+
+The Lead Senior Watson signed off on the fix.
+
 # Issue H-2: Many cases `stEth::transferFrom` will transfer 1-2 less way, which would result in revert in consequent functions, because of not enough balance 
 
 Source: https://github.com/sherlock-audit/2024-05-sophon-judging/issues/63 
@@ -262,9 +266,15 @@ Use lido recommendation to utilize `transferShares` function, so the `_amount` i
 
 
 
+**mcbvictor0x**
+
+Fixed here: https://github.com/sophon-org/farming-contracts/commit/66e05ccb6cdfb8392b6a2bb4953931168cd247d3
+
 # Issue M-1: `accPointsPerShare` can reach a very large value leading to overflows 
 
 Source: https://github.com/sherlock-audit/2024-05-sophon-judging/issues/36 
+
+The protocol has acknowledged this issue.
 
 ## Found by 
 ZdravkoHr.
@@ -562,11 +572,11 @@ Escalations have been resolved successfully!
 Escalation status:
 - [ZdravkoHr](https://github.com/sherlock-audit/2024-05-sophon-judging/issues/36/#issuecomment-2145925136): accepted
 
-**sherlock-admin2**
+**mcbvictor0x**
 
-The protocol team fixed this issue in the following PRs/commits:
-https://github.com/sophon-org/farming-contracts/commit/f0b82fd83a5d85eb8dc7ba2bbce2d49fefb326a4
+> The protocol team fixed this issue in the following PRs/commits: [sophon-org/farming-contracts@f0b82fd](https://github.com/sophon-org/farming-contracts/commit/f0b82fd83a5d85eb8dc7ba2bbce2d49fefb326a4)
 
+Can this issue be closed?
 
 # Issue M-2: Protocol won't be eligible for referral rewards for depositing ETH 
 
@@ -804,9 +814,15 @@ Escalations have been resolved successfully!
 Escalation status:
 - [ZdravkoHr](https://github.com/sherlock-audit/2024-05-sophon-judging/issues/92/#issuecomment-2145938719): rejected
 
+**sherlock-admin2**
+
+The Lead Senior Watson signed off on the fix.
+
 # Issue M-3: `setStartBlock()` doesn't change the block at which already existing pools will start accumulating points 
 
 Source: https://github.com/sherlock-audit/2024-05-sophon-judging/issues/108 
+
+The protocol has acknowledged this issue.
 
 ## Found by 
 0xAadi, EgisSecurity, KupiaSec, MightyRaju, ZdravkoHr., araj, blackhole, dhank, h2134, jecikpo, serial-coder, underdog, utsav, whitehair0330, yamato, zzykxx
@@ -877,9 +893,7 @@ In [setStartBlock()](https://github.com/sherlock-audit/2024-05-sophon/blob/main/
 
 
 
-**sherlock-admin2**
+**mcbvictor0x**
 
-The protocol team fixed this issue in the following PRs/commits:
-https://github.com/sophon-org/farming-contracts/commit/1f8d4e5ccec63052fcaf751b867294472e2d20a7
-
+Issue is no longer relevant since we removed the global startBlock setting: https://github.com/sophon-org/farming-contracts/commit/18b59d5d1a987caf821245ab83505ca6f62904e6
 
